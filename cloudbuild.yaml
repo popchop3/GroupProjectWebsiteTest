@@ -4,10 +4,10 @@ steps:
     - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
       entrypoint: 'gcloud'
       args: ['compute', 'instances', 
-             'create-with-container', 'test-lamp-website-vm',
+             'test-lamp-website-vm',
              '--zone', 'us-west1-b',
-             
-             '--container-image', 
             'us-central1-docker.pkg.dev/glowing-palace-344420/my-docker-repo/myimage']
+  
+   
   
    
